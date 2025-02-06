@@ -2,11 +2,11 @@
 Minimalistic, personal use, mostly vanilla dotfiles for Niri. Very loosely based upon ML4W's preset keybinds. 
 
 Requires or uses:
-- waybar
-- xwayland-satellite
-- alacritty
-- fuzzel
-- swaylock
-- firefox
+- waybar (topbar)
+- xwayland-satellite (XOrg app support)
+- alacritty (terminal)
+- fuzzel (app launcher)
+- swaylock (screen locker)
+- firefox 
 
   
