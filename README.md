@@ -9,4 +9,4 @@ Requires or uses:
 - swaylock (screen locker)
 - firefox 
 
-  
+You will want to change your monitor settings if you want to use these for some reason.
