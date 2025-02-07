@@ -1,5 +1,5 @@
 # dotfiles-niri
-Minimalistic, personal use, mostly vanilla dotfiles for Niri. Very loosely based upon ML4W's preset keybinds, leaning into Catppuchin Mocha color scheme.
+Minimalistic, personal use, mostly vanilla dotfiles for Niri. Very loosely based upon ML4W's preset keybinds, leaning into Catppuccin Mocha color scheme.
 
 Requires or uses:
 - waybar (topbar)
