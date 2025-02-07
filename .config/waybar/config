@@ -18,7 +18,7 @@
     },
     "backlight": {
         "device": "intel_backlight",
-        "format": "{icon} {capacity}%",
+        "format": "{icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
@@ -26,8 +26,7 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon}",
-        "format-alt": "{icon}",
+        "format": "{icon}  {capacity}%",
         "format-icons": ["", "", "", "", ""],
     },
     "pulseaudio": {
