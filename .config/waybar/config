@@ -27,17 +27,15 @@
             "critical": 15
         },
         "format": "{icon}",
-        "format-charging": "",
-        "format-plugged": "",
         "format-alt": "{icon}",
-        "format-icons": ["", "",  "", "", "", "", "", "", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""],
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{icon} {volume}%",
         "format-muted": "",
         "format-icons": {
-            "default": [" ", " ", "  "]
+            "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
     },
