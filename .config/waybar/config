@@ -18,7 +18,7 @@
     },
     "backlight": {
         "device": "intel_backlight",
-        "format": "{icon}",
+        "format": "{icon} {capacity}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
