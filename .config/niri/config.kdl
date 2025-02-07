@@ -223,16 +223,9 @@ layout {
         color "#0007"
     }
 
-    // Struts shrink the area occupied by windows, similarly to layer-shell panels.
-    // You can think of them as a kind of outer gaps. They are set in logical pixels.
-    // Left and right struts will cause the next window to the side to always be visible.
-    // Top and bottom struts will simply add outer gaps in addition to the area occupied by
-    // layer-shell panels and regular gaps.
+    // Make the distance between the bottom of the waybar and the top of the window consistient with the top of the waybar and the top of the screen
     struts {
-        // left 64
-        // right 64
-        // top 64
-        // bottom 64
+        top -12
     }
 }
 
