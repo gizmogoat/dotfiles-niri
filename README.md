@@ -4,7 +4,7 @@ Minimalistic, personal use, mostly vanilla dotfiles for Niri. Very loosely based
 Requires or uses:
 - waybar (topbar)
 - xwayland-satellite (XOrg app support)
-- alacritty (terminal)
+- kitty (terminal)
 - fuzzel (app launcher)
 - swaylock (screen locker)
 - firefox 
