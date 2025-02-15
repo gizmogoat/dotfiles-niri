@@ -7,6 +7,10 @@ spawn-at-startup "waybar"
 
 // XWayland handling. Something on my system is taking :0 but I don't know what. This is good enough! :)
 spawn-at-startup "xwayland-satellite" ":12"
+// Niri config files don't support using ~/ so you'll have to change it to your home directory yourself
+spawn-at-startup "swaybg" "-i" "/home/kaylie/Pictures/wallpaper.png" "-m" "fill"
+// Niri generally prefers GTK based apps/portals, so we'll go along
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 
 environment {
     DISPLAY ":12"
