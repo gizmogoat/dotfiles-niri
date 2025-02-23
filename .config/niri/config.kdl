@@ -546,4 +546,8 @@ binds {
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
+
+    // Binds new in Niri v25.02. Comment these out if your distribution does not package this version of Niri yet.
+    Mod+W { toggle-column-tabbed-display; }
+    Mod+G { expand-column-to-available-width; }
 }
