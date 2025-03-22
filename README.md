@@ -7,6 +7,9 @@ Requires or uses:
 - kitty (terminal)
 - fuzzel (app launcher)
 - swaylock (screen locker)
+- swaybg (wallpaper)
+- polkit-gnome (authentication popups)
+- playerctl (media player keybinds)
 - firefox 
 
-You will want to change your monitor settings if you want to use these for some reason.
+You will want to change your monitor settings, wallpaper path, and other values in the config if you wish to use these dotfiles.
