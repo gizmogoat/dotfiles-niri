@@ -12,6 +12,7 @@
   margin: 5px 5px;
 }
 
+#group-media,
 #workspaces {
   border-radius: 1rem;
   margin: 5px;
@@ -33,6 +34,10 @@
 #workspaces button:hover {
   color: @sapphire;
   border-radius: 1rem;
+}
+
+#group-media {
+    padding: 0.5rem 1rem;
 }
 
 #custom-music,
