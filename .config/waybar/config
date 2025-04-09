@@ -43,23 +43,26 @@
         "drawer": {
             "transition-duration": 500,
        	    "children-class": "not-power",
-       	    "transition-left-to-right": false,
+       	    "transition-left-to-right": false
         },
-        "modules": ["mpris#icon", "mpris"]
+        "modules": ["custom/playericon", "mpris#icon", "mpris"]
     },
+    "custom/playericon": { "format": " "},
     "mpris": {
-	"format": "{dynamic}",
-	"format-paused": "<i>{dynamic}</i>"
+        "format": "{dynamic}",
+        "format-paused": "<i>{dynamic}</i>",
+        "interval": 1
     },
     "mpris#icon": {
-	"format": "{player_icon}",
-	"format-paused": "{status_icon}",
-	"interval": 2,
-	"player-icons": {
-		"default": "▶"
-	},
-	"status-icons": {
-		"paused": "⏸"
-	}
+        "format": "{player_icon}",
+        "format-paused": "{status_icon}",
+        "interval": 1,
+        "player-icons": {
+            "default": " "
+        },
+        "status-icons": {
+            "paused": " ",
+            "stopped": " "
+        }
     }
 }
