@@ -8,12 +8,16 @@ spawn-at-startup "waybar"
 // XWayland handling. Something on my system is taking :0 but I don't know what. This is good enough! :)
 spawn-at-startup "xwayland-satellite" ":12"
 // Niri config files don't support using ~/ so you'll have to change it to your home directory yourself
-spawn-at-startup "swaybg" "-i" "/home/kaylie/Pictures/wallpaper.png" "-m" "fill"
+spawn-at-startup "glpaper" "DP-1" "/home/kaylie/balatro.glsl"
+spawn-at-startup "glpaper" "HDMI-A-1" "/home/kaylie/boingball.glsl"
+spawn-at-startup "glpaper" "DVI-I-1" "/home/kaylie/ps3.glsl"
 // Niri generally prefers GTK based apps/portals, so we'll go along
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 
 environment {
     DISPLAY ":12"
+    QT_STYLE_OVERRIDE "kvantum"
+    //QT_QPA_PLATFORM "qt6ct"
 }
 
 // Input device configuration.
@@ -81,7 +85,7 @@ input {
 output "DVI-I-1" {
     mode "1920x1080@60.000"
     transform "normal"
-    position x=0 y=0
+    position x=0 y=500
 }
 output "DP-1" {
     mode "2560x1440@164.835"
@@ -91,7 +95,7 @@ output "DP-1" {
 output "HDMI-A-1" {
     mode "1280x1024@60.020"
     transform "normal"
-    position x=4480 y=0
+    position x=4480 y=400
 }
 
 // Settings that influence how windows are positioned and sized.
@@ -99,7 +103,7 @@ output "HDMI-A-1" {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 16
+    gaps 5
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -147,7 +151,7 @@ layout {
         // off
 
         // How many logical pixels the ring extends out from the windows.
-        width 4
+        width 2
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -226,11 +230,6 @@ layout {
         // You can also change the shadow color and opacity.
         color "#0007"
     }
-
-    // Make the distance between the bottom of the waybar and the top of the window consistient with the top of the waybar and the top of the screen
-    struts {
-        top -12
-    }
 }
 
 // Add lines like this to spawn processes at startup.
@@ -288,6 +287,11 @@ window-rule {
     open-floating true
 }
 
+window-rule {
+    match app-id="vrmonitor"
+    open-floating true
+}
+
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
@@ -298,13 +302,6 @@ window-rule {
 
     // Use this instead if you want them visible on third-party screenshot tools.
     // block-out-from "screencast"
-}
-
-// Example: enable rounded corners for all windows.
-// (This example rule is commented out with a "/-" in front.)
-window-rule {
-    geometry-corner-radius 12
-    clip-to-geometry true
 }
 
 binds {
@@ -553,4 +550,8 @@ binds {
     // Binds new in Niri v25.02. Comment these out if your distribution does not package this version of Niri yet.
     Mod+W { toggle-column-tabbed-display; }
     Mod+G { expand-column-to-available-width; }
+}
+
+debug {
+    wait-for-frame-completion-in-pipewire
 }
