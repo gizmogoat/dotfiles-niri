@@ -315,3 +315,7 @@ background: rgba(0, 0, 0, 0.2);
 #scratchpad.empty {
 background-color: transparent;
 }
+
+#window {
+margin-top: -50px; margin-bottom: -50px
+}
