@@ -222,10 +222,7 @@ border-left: 1px solid #6c7086;
 background-color: rgba(49, 50, 68, 1.0);
 }
 
-#wireplumber {
-background-color: #fff0f5;
-color: #000000;
-}
+
 
 #wireplumber.muted {
 background-color: #f53c3c;
